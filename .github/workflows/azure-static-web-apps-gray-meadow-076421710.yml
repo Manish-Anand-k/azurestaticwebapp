@@ -37,6 +37,7 @@ jobs:
           app_location: ${{ env.APP_LOCATION }}
           api_location: ${{ env.API_LOCATION }}
           app_artifact_location: ${{ env.APP_ARTIFACT_LOCATION }}
+          production_branch: "main"
 
   close:
     if: github.event_name == 'pull_request' && github.event.action == 'closed'
